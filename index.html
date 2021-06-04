@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <title>Mine Sweeper</title>
+    <link rel='stylesheet' href='css/style.css'>
+</head>
+
+<body onload="restartGame()">
+
+    <h1>Mine Sweeper</h1>
+    <div>
+        <table class="boxes">
+            <tr>
+                <th>
+                    <div class="time">Time:<span>00:00:00</span></div>
+                </th>
+                <th>
+                    <div class="score">Score:<span1>0</span1>
+                </th>
+                <th>
+                    <div class="level" onclick="handleClick(this)"><span2>Beginner</span2></div>
+                </th>
+                <th>
+                    <div >Safe click <button onclick="safeClick(this)" class="safe" >1</button></div>
+                </th>
+            </tr>
+    </div>
+    </table>
+    </div>
+    <div>
+        <table class="board" oncontextmenu="addFlag()"></table>
+    </div>
+    <button onclick="restartGame()" class="reset"><span>Reset Board</span></button>
+    <script src="js/util.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

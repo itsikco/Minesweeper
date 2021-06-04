@@ -1,0 +1,115 @@
+body {
+    background: black;
+    color: #DDDDDD;
+    font-family: courier new;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    font-size: 60px;
+    font-weight: normal;
+    color: rgb(168, 114, 114);
+}
+
+/* .boxes .box {
+    width: 50px;
+    height: 20px;
+    margin-right: 140px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+    display: inline-block;
+    font-size: 25px;
+}  */
+
+.boxes {
+    margin-left: auto;
+    margin-right: auto;
+    background: black;
+    margin-bottom: 20px;
+}
+
+.boxes TH  {
+    width: 290px;
+    height: 40px;
+    background: black;
+    margin-top: 10px;
+    font-size: 27px;
+    text-align: center;
+}
+.level:hover {
+    cursor: pointer;
+    color: #b16363;
+
+}
+
+.safe {
+    border:1px solid rgb(238, 179, 179);
+    color: #DDDDDD;
+    background-color: #8d4446;
+    width: 35px;
+    height: 35px;
+    font-size: 18px;
+    border-radius: 7px;
+    box-shadow: 2px 3px 3px 2px rgba(134, 132, 132, 0.74);
+}
+.safe:hover {
+    border:1px solid rgb(238, 179, 179);
+    background-color: #b97a7c;
+    cursor: pointer;
+}
+
+.board {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    box-shadow: 3px 3px 5px 5px rgba(134, 132, 132, 0.74);
+}
+
+.board TR TD.unClicked {
+    border:3px solid rgb(85, 61, 61);
+    width: 50px;
+    height: 50px;
+    border-radius: 3px;
+    background: linear-gradient(to top, #9e4244, #944040, #7e2a2a, #752424, #6b2222, #722222, #a14345);
+    margin-bottom: 10px;
+    margin-top: -32px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    
+}
+
+.board TR TD:hover {
+    background: linear-gradient(to top, #F3686A, #be5c5c, #924040, #853d3d, #ac4d4d, #be5151, #F3686A);
+    cursor: pointer;
+}
+
+.board TR TD.clicked {
+    border:3px solid rgb(85, 61, 61);
+    background: #ac5e60;
+    width: 50px;
+    height: 50px;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    margin-top: -32px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.reset {
+    border:1px solid rgb(214, 133, 133);
+    color: #DDDDDD;
+    margin: 40px;
+    background-color: #8d4446;
+    width: 130px;
+    height: 35px;
+    font-size: 18px;
+    border-radius: 7px;
+    box-shadow: 2px 3px 3px 2px rgba(134, 132, 132, 0.74);
+}
+
+.reset:hover {
+    border:1px solid rgb(200, 133, 133);
+    background-color: #aa6567;
+    cursor: pointer;
+}
